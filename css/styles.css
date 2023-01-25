@@ -207,7 +207,9 @@ section#banners {
 }
 
 .unicos {
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     color: white;
     font-family: Georgia, 'Times New Roman', Times, serif;
     padding: 2rem;
