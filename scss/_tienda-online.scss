@@ -1,0 +1,102 @@
+/*TIENDA ONLINE*/
+h1, h2, h3, h4, h5, h6 p, a, input, textarea, ul {
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    color: rgb(18, 214, 18);
+}
+
+.btn-primary {
+    padding: 10px;
+    width: 250px;
+    text-align: center;
+    border: none;
+    background-color: rgb(10, 243, 2);
+}
+
+/*Filtro de productos*/
+
+.container-cards {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 20px;
+justify-items: center;
+margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+    .container-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .container-opciones {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .container-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1200px) {
+    .container-cards {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.container-opciones {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    color: white;
+label {
+    cursor: pointer;
+    padding: 8px 15px;
+    border-radius: 2rem;
+}
+label:nth-of-type(odd) {
+    background-color: green;
+}
+
+label:nth-of-type(even) {
+    background-color: blue;
+}
+}
+
+#cosmeticas,
+#revividores-emulsiones,
+#todos {
+    display: none;
+}
+
+.card-cosmetica,
+.revividores-emulsiones {
+    display: none;
+}
+
+#cosmeticas:checked ~ .container-cards .card-cosmetica,
+#revividores-emulsiones:checked ~ .container-cards .revividores-emulsiones {
+    display: flex;
+}
+
+#todos:checked ~ .container-cards .card-cosmetica,
+#todos:checked ~ .container-cards .revividores-emulsiones {
+    display: flex;
+}
+
+.text-center {
+    color: rgb(0, 220, 136);
+}

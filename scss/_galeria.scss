@@ -1,0 +1,105 @@
+#galeria-garden {
+    @extend .unicos;
+    color: $colortitulos;
+    h2 {
+        background-color: rgb(42, 42, 236);
+        border-radius: 5px;
+        padding: 5px;
+    }
+}
+
+#carouselExampleCaptions {
+    width: 800px;
+}
+
+#galeria-garden {
+    grid-area: galeria;
+}
+
+.fotos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.mejores-momentos {
+    font-size: large;
+    color: white;
+    text-align: center;
+}
+
+.camaras {
+    font-size: xx-small;
+    color: hsl(0, 72%, 90%);
+    text-align: center;
+}
+
+#body-ejemplo-galeria {
+    display: grid;
+    grid-template-areas:
+    "header-garden"
+    "galeria"
+    "banners"
+    "footer-garden";
+    background: url(../img/gifgaleria2.gif) no-repeat center center fixed;
+    background-size: cover;
+}
+
+header {
+    grid-area: header-garden;
+}
+
+section#galeria-garden {
+    grid-area: galeria;
+}
+
+section#banners {
+    grid-area: banners;
+}
+
+
+#footer-garden {
+    grid-area: footer-garden;
+    margin-top: 2rem;
+    background-color: rgb(0, 0, 0);
+    bottom: 0;
+    p {
+    font-size: 1.8rem;
+    color: white;
+    text-align: center;
+        }
+}
+@media screen and (min-width: 768px) {
+    .fotos {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    
+    .espuma1:hover {
+        transform: scale(1.2);
+        transition: all 1s;
+    }
+    .espuma2:hover {
+        transform: scale(1.2);
+        transition: all 1s;
+    }
+    .espuma3:hover {
+        transform: scale(2.2);
+        transition: all 1s;
+    }
+    .espuma4:hover {
+        transform: scale(1.2);
+        transition: all 1s;
+    }
+    .playapanoramica:hover {
+        transform: scale(2.2);
+        transition: all 1s;
+    }
+}
+

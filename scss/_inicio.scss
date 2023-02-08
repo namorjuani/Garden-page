@@ -1,3 +1,48 @@
-h1 {
-    color: $colorfont;
+.unicos {
+    h1 {
+        color: $colortitulos;
+    }
+    li {
+        margin-top: $espaciado;
+    }
+    @include flex-column-centrado;
+}
+
+/*CARRUSEL*/
+
+#carouselExampleCaptions {
+    margin-top: 3rem;
+}
+
+.carousel-caption {
+    h5 { 
+        color: rgb(255, 255, 255);
+    }
+    p {
+        color: yellow ;
+    }
+}
+
+.unicos {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 2rem;
+}
+
+
+@keyframes cambio {
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;} 
+    
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
 }

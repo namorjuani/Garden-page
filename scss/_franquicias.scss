@@ -1,0 +1,48 @@
+.franquicias {
+    h1 {
+        color: $colortitulos;
+    }
+    h2 {
+        margin-top: $espaciado - 20px;
+    }
+
+    a {
+        margin-top: $espaciado + 10px;
+    }
+}
+
+
+.encontranos {
+    @include flex-column-centrado;
+
+    p {
+        color: $colortitulos;
+    }
+
+    font-weight: 900;
+    font-size: large;
+    font-family: cursive
+}
+
+.franquiciagcw {
+    @extend .unicos;
+}
+
+.franquicias {
+    background-color: rgb(30, 30, 214);
+    margin-top: 4rem;
+    text-align: center;
+    padding: 6rem;
+}
+
+.franquiciagcw {
+    color: white;
+}
+
+.h2franquicia {
+    color: white;
+    font-size: medium;
+}
+
+
+

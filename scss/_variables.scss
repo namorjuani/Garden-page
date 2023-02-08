@@ -1,3 +1,23 @@
 /*Variables*/
 /*Paleta de colores*/
-$colorfont: rgb(102, 255, 0);
+$colortitulos: rgb(102, 255, 0);
+
+
+/*Medidas*/
+$espaciado: 50px;
+
+
+/*Tamaños de pantallas*/
+$pantalla-md: 768px;
+
+/*Creando Mixins sin parámetros*/
+@mixin flex-column-centrado {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 2rem;
+    gap: 30px;
+}
+
+/*Condicionales*/
+$fiesta: ninguna;
