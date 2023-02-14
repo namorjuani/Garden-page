@@ -10,6 +10,14 @@
     padding-right: 30px;
 }
 
+@media screen and (max-width: 768px) {
+    .contact_form {
+        width: 70%;
+    }
+}
+    
+
+
 input {
     background-color: #becefd; 
     width: 408px; 
@@ -110,3 +118,4 @@ color: #a8a8a8;
     outline:0;
     border: 1px solid #97d848;
 }
+
