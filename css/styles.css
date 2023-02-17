@@ -497,10 +497,12 @@ img {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 769px) {
 
   .divfooter {
+    display: flex;
     flex-direction: row;
+    gap: 0.5rem;
   }
 
 }
