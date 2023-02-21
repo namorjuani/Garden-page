@@ -22,6 +22,7 @@
 /*CARRUSEL*/
 #carouselExampleCaptions {
   margin-top: 3rem;
+  width: 100%;
 }
 
 .carousel-caption h5 {
@@ -210,7 +211,7 @@ section#banners {
   }
 }
 .contact_form {
-  width: 100%;
+  width: 460px;
   height: auto;
   margin: 80px auto;
   border-radius: 10px;
@@ -431,7 +432,7 @@ h2 {
 }
 
 .logo {
-  width: 150px;
+  width: 300px;
   border-radius: 25%;
   display: block;
   margin: 0 auto;
@@ -495,24 +496,18 @@ img {
   .menu__nav {
     flex-direction: column;
   }
-}
-
-@media screen and (min-width: 769px) {
-
   .divfooter {
-    display: flex;
-    flex-direction: row;
-    gap: 0.5rem;
+    color: white;
+    text-align: center;
   }
-
 }
-  
-
-.divfooter {
-  text-align: center;
-}
-.divfooter h1 {
-  color: white;
+@media screen and (min-width: 768px) {
+  .divfooter {
+    flex-wrap: wrap;
+    display: flex;
+    width: 100%;
+    color: white;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

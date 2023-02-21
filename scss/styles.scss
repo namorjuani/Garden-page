@@ -5,6 +5,7 @@
 @import "contacto";
 @import "tienda-online";
 
+
 * {
     margin: 0;
     padding: 0;
@@ -22,12 +23,11 @@
 }
 
 .logo {
-    width: 150px;
+    width: 300px;
     border-radius: 25%;
     display: block;
     margin: 0 auto;
     width: 100px;
-    margin-right: 5rem;
 }
 
 header {
@@ -88,15 +88,20 @@ img {
     .menu__nav {
         flex-direction: column;
     }
+    .divfooter {
+        color: white;
+        text-align: center;
+    }
+    
 }
 
-
-
-.divfooter {
-    text-align: center;
-    h1 {
-    color: white;
-        }
+@media screen and (min-width: $pantalla-md) {
+    .divfooter {
+        flex-wrap: wrap;
+        display: flex;
+        width: 100%;
+        color: white;
+    }
 }
 
 
